@@ -22,6 +22,7 @@
   --main-portfolio: #fff;
   --header-line: #ececec;
   --border-box: #eee;
+  --icon-color: #afb1b8;
 }
 
 h1,
@@ -283,14 +284,6 @@ img {
   margin-right: 30px;
 }
 
-.persone-name:not(:last-child) {
-  margin-right: 30px;
-}
-
-.occupation:not(:last-child) {
-  margin-right: 30px;
-}
-
 .person-name {
   color: var(--title-lorem);
   font-size: 16px;
@@ -312,10 +305,49 @@ img {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 24px;
+  background-color: var(--background-menu);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .team {
   background: var(--background-team);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--text-action-color);
+}
+
+.social-list_link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-menu);
+  fill: var(--icon-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list_link:hover,
+.social-list_link:focus {
+  background-color: var(--action-color);
 }
 
 .main {
