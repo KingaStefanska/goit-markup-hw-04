@@ -337,8 +337,8 @@ img {
   justify-content: center;
 }
 
-.social-list_link:hover,
-.social-list_link:focus {
+.social-list-item:hover,
+.social-list-item:focus {
   background-color: var(--action-color);
   fill: var(--text-action-color);
 }
