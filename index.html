@@ -27,13 +27,20 @@
             <a href="portfolio.html" class="portfolio link">Portfolio</a>
             <a href="/contact" class="contact link">Kontakt</a>
           </nav>
-          <!-- <svg width="16px" heigth="12px" class="icon-top">
-            <use href="./images/icons.svg#mail-icon"></use>
-          </svg> -->
-          <a href="mailto:nfo@devstudio.com" class="mail link"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+48111111111" class="phone link">+48 111 111 111</a>
+          <p class="icon-mail">
+            <svg class="mail-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <a href="mailto:nfo@devstudio.com" class="mail link"
+              >info@devstudio.com</a
+            >
+          </p>
+          <p class="icon-phone">
+            <svg class="phone-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a href="tel:+48111111111" class="phone link">+48 111 111 111</a>
+          </p>
         </section>
       </div>
     </header>
@@ -51,6 +58,11 @@
         <div class="container">
           <ul class="lorem-list list">
             <li class="lorem">
+              <p class="lorem-icons-item">
+                <svg class="antenna" width="70" height="70">
+                  <use href="/images/icons.svg#icon-antenna"></use>
+                </svg>
+              </p>
               <p class="title-lorem">Lorem Ipsum</p>
               <p class="text-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -59,6 +71,11 @@
               </p>
             </li>
             <li class="lorem">
+              <p class="lorem-icons-item">
+                <svg class="clock" width="70" height="70">
+                  <use href="/images/icons.svg#icon-clock"></use>
+                </svg>
+              </p>
               <p class="title-lorem">Lorem Ipsum</p>
               <p class="text-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -67,6 +84,11 @@
               </p>
             </li>
             <li class="lorem">
+              <p class="lorem-icons-item">
+                <svg class="diagram" width="70" height="70">
+                  <use href="/images/icons.svg#icon-diagram"></use>
+                </svg>
+              </p>
               <p class="title-lorem">Lorem Ipsum</p>
               <p class="text-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -75,6 +97,11 @@
               </p>
             </li>
             <li class="lorem right">
+              <p class="lorem-icons-item">
+                <svg class="astronaut" width="70" height="70">
+                  <use href="/images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </p>
               <p class="title-lorem">Lorem Ipsum</p>
               <p class="text-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -299,13 +326,95 @@
           </ul>
         </div>
       </section>
+      <section class="clients">
+        <div class="our-clients">
+          <h2 class="title-clients">Nasi klienci</h2>
+          <ul class="clients-list list">
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo1" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo2" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo3" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo4" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-client">
+              <a class="client-link link" href="#">
+                <svg class="client-logo5" width="106" height="60.04">
+                  <use href="/images/icons.svg#icon-Logo5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
         <a href="index.html" class="logo2 link">Web<span>Studio</span></a>
-        <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <p class="mail2 link">info@example.com</p>
-        <p class="phone2 link">+48 111 111 111</p>
+        <a class="join-us">Dołącz do nas</a>
+        <ul class="social-list-footer list">
+          <li clas="social-list-item-footer link">
+            <a class="social-list_link-footer" href="#">
+              <svg class="social-icon-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li clas="social-list-item-footer link">
+            <a class="social-list_link-footer" href="#">
+              <svg class="social-icon-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li clas="social-list-item-footer link">
+            <a class="social-list_link-footer" href="#">
+              <svg class="social-icon-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li clas="social-list-item-footer link">
+            <a class="social-list_link-footer" href="#">
+              <svg class="social-icon-footer" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="contact-footer">
+          <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <p class="mail2 link">info@example.com</p>
+          <p class="phone2 link">+48 111 111 111</p>
+        </div>
       </div>
     </footer>
   </body>

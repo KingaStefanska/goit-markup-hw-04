@@ -102,16 +102,18 @@ img {
 
 .mail,
 .phone {
+  display: inline;
+  justify-content: flex-end;
   line-height: 1.1;
   font-weight: 500;
   color: var(--contacts-color);
   font-size: 14px;
 }
 
-.mail:hover,
 .mail:focus,
-.phone:hover,
-.phone:focus {
+.mail:hover,
+.phone:focus,
+.phone:hover {
   color: var(--action-color);
 }
 
@@ -125,8 +127,26 @@ img {
 }
 
 .mail {
-  margin-left: 371px;
-  margin-right: 50px;
+  margin-right: 30px;
+}
+
+.icon-mail {
+  margin-left: 345px;
+}
+
+.icon-mail,
+.icon-phone {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  fill: var(--contacts-color);
+}
+
+.icon-mail:hover,
+.icon-mail:focus,
+.icon-phone:hover,
+.icon-mail:focus {
+  fill: var(--action-color);
 }
 
 .agency,
@@ -215,6 +235,17 @@ img {
   line-height: 1.71;
   font-weight: 400;
   text-align: left;
+}
+
+.lorem-icons-item {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-team);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .activities {
@@ -332,15 +363,61 @@ img {
   width: 44px;
   height: 44px;
   background-color: var(--background-menu);
+  fill: var(--icon-color);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
 
-.social-list-item:hover,
-.social-list-item:focus {
-  background-color: var(--action-color);
+.social-list_link:hover,
+.social-list_link:focus {
   fill: var(--text-action-color);
+  background-color: var(--action-color);
+}
+
+.title-clients {
+  color: var(--title-lorem);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 94px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.client-link {
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-client:hover,
+.icon-client:focus {
+  border-color: var(--action-color);
+  fill: var(--action-color);
+}
+
+.icon-client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
@@ -403,6 +480,12 @@ img {
   border-bottom: 1px solid var(--border-box);
 }
 
+.portfolio-pictures:hover,
+.portfolio-pictures:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .description-portfolio {
   box-sizing: border-box;
   width: 370px;
@@ -432,11 +515,22 @@ img {
   font-weight: 700;
   text-decoration: none;
   padding-bottom: 20px;
-  display: flex;
+  display: inline;
+  margin-right: 171px;
 }
 
 .logo2 > span {
   color: var(--text-action-color);
+}
+
+.join-us {
+  display: inline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--background-menu);
+  padding-bottom: 20px;
 }
 
 .mail2:hover,
@@ -453,6 +547,7 @@ img {
 }
 
 .address {
+  display: inline;
   color: var(--text-action-color);
   font-size: 14px;
 }
@@ -470,12 +565,45 @@ img {
   padding-bottom: 60px;
 }
 
+.contact-footer {
+  display: block;
+  margin-top: 20px;
+  margin-right: 70px;
+  width: 246px;
+}
+
 .footer {
   background: var(--background-footer);
   padding-top: 60px;
   justify-content: flex-start;
 }
 
-/* .icon-top {
-  stroke: var(--contacts-color);
-} */
+.social-list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+}
+
+.social-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list_link-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: var(--background-menu);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list_link-footer:hover,
+.social-list_link-footer:focus {
+  background-color: var(--action-color);
+}
