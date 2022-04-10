@@ -322,16 +322,9 @@ img {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--text-action-color);
 }
 
 .social-list_link {
@@ -339,7 +332,6 @@ img {
   width: 44px;
   height: 44px;
   background-color: var(--background-menu);
-  fill: var(--icon-color);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -348,6 +340,7 @@ img {
 .social-list_link:hover,
 .social-list_link:focus {
   background-color: var(--action-color);
+  fill: var(--text-action-color);
 }
 
 .main {
