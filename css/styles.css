@@ -216,7 +216,7 @@ img {
   flex-basis: calc(100% / 4 -30px);
 }
 
-.lorem {
+.lorem:not(:last-child) {
   padding-right: 30px;
 }
 
