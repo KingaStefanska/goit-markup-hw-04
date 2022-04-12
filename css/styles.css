@@ -141,7 +141,7 @@ img {
 
 .icon-mail,
 .icon-phone {
-  display: inline;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: var(--contacts-color);
